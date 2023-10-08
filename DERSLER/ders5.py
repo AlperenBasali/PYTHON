@@ -51,96 +51,75 @@
 
 
 # ! ATM UYGULAMASI
-# def atm():
-#     hesabım = "Furkan"
-#     sifrem = "1234"
-#     bakiye = 5000
-#     borc = 3000
-#     hak = 3
+def atm():
+    hesabım = "Furkan"
+    sifrem = "1234"
+    bakiye = 5000
+    borc = 3000
+    hak = 3
 
-#     while True:
-#         hak = hak - 1
-#         print(f"Kalan hakkınız {hak}")
-#         kullanici = input("Kullanıcı adınızı giriniz:")
-#         sifre = input("Şifrenizi giriniz:")
-#         if kullanici == hesabım and sifre == sifrem:
-#             print(f"Bakiyeniz : {bakiye}₺")
-#             while True:
-#                 print(f"""
+    while True:
+        hak = hak - 1
+        print(f"Kalan hakkınız {hak}")
+        kullanici = input("Kullanıcı adınızı giriniz:")
+        sifre = input("Şifrenizi giriniz:")
+        if kullanici == hesabım and sifre == sifrem:
+            print(f"Bakiyeniz : {bakiye}₺")
+            while True:
+                print(f"""
 
-# Hoşgeldiniz. Yapabileceğiniz İşlemler:
-# 1-Para Çekme
-# 2-Para Yatırma
-# 3-Para Gönderme
-# 4-Şifre Değiştirme
-# 5-Bakiye Sorgulama
-# 6-Borç Sorgulama
-# 7-Çıkış                     
+Hoşgeldiniz. Yapabileceğiniz İşlemler:
+1-Para Çekme
+2-Para Yatırma
+3-Para Gönderme
+4-Şifre Değiştirme
+5-Bakiye Sorgulama
+6-Borç Sorgulama
+7-Çıkış                     
                       
-# """)
-#                 islem = int(input("Yapacağınız işlemi giriniz:"))
-#                 if islem == 1:
-#                     print(f"Bakiyeniz : {bakiye}₺")
-#                     cek = int(input("Çekmek istediğiniz tutarı giriniz:"))
-#                     if bakiye > cek:
-#                         bakiye = bakiye - cek
-#                         print(f"Para çekme işleminiz başarıyla gerçekleştirildi. Güncel bakiyeniz : {bakiye}₺ ")
-#                     else:
-#                         print("Bakiyeniz yetersiz")
+""")
+                islem = int(input("Yapacağınız işlemi giriniz:"))
+                if islem == 1:
+                    print(f"Bakiyeniz : {bakiye}₺")
+                    cek = int(input("Çekmek istediğiniz tutarı giriniz:"))
+                    if bakiye > cek:
+                        bakiye = bakiye - cek
+                        print(f"Para çekme işleminiz başarıyla gerçekleştirildi. Güncel bakiyeniz : {bakiye}₺ ")
+                    else:
+                        print("Bakiyeniz yetersiz")
 
-#                 elif islem == 2:
-#                     yatir = int(input("Yatırmak istediğiniz tutarı giriniz:"))
-#                     bakiye = bakiye + yatir
-#                     print(f"Para yatırma işleminiz başarılı. Güncel bakiyeniz : {bakiye}₺")
+                elif islem == 2:
+                    yatir = int(input("Yatırmak istediğiniz tutarı giriniz:"))
+                    bakiye = bakiye + yatir
+                    print(f"Para yatırma işleminiz başarılı. Güncel bakiyeniz : {bakiye}₺")
                 
-#                 elif islem == 3:
-#                     print(f"Güncel bakiye {bakiye}₺")
-#                     gönder = int(input("Gönderilecek tutarı giriniz:"))
-#                     if bakiye >= gönder:
-#                         bakiye -= gönder
-#                         print(f"İşlem başarılı. Kalan bakiyeniz: {bakiye}₺")
-#                     else:
-#                         print("Bakiyeniz yetersiz")
+                elif islem == 3:
+                    print(f"Güncel bakiye {bakiye}₺")
+                    gönder = int(input("Gönderilecek tutarı giriniz:"))
+                    if bakiye >= gönder:
+                        bakiye -= gönder
+                        print(f"İşlem başarılı. Kalan bakiyeniz: {bakiye}₺")
+                    else:
+                        print("Bakiyeniz yetersiz")
                 
-#                 elif islem == 4:
-#                     while True:
-#                         mevcutSifre = input("Mevcut şifrenizi giriniz:")
-#                         if mevcutSifre == sifrem:
-#                             yeniSifre = input("Yeni şifrenizi giriniz:")
-#                             sifrem = yeniSifre
-#                             print(f"Şifreniz değiştirildi. Yeni şifreniz {sifrem}")
-#                             break
-#                         else:
-#                             print("Hatalı şifre")
-#                 elif islem == 5:
-#                     print(f"Mevcut bakiyeniz: {bakiye}₺")
-#                 elif islem == 6:
-#                     print(f"Borcunuz : {borc}₺")
-#                 elif islem == 7:
-#                     print("Çıkış yappılıyor...")
-#                     break
-#         elif hak == 1:
-#             print("Hakkınız dolmuştur.")
-#             break                
-# atm()
-
-
-# ! DICTIONARY KAVRAMI
-karakter = {
-    "isim":"Furkan",
-    "soyisim":"İlaslan",
-    "yas":26,
-    "meslek":"Eğitmen",
-}
-
-# print(karakter)
-# print(type(karakter))
-# print(len(karakter))
-# print(karakter["isim"])
-# karakter["medeni durum"] = "bekar"
-# print(karakter)
-# karakter["isim"] = "Yusuf"
-# print(karakter)
-# print(karakter.keys())
-# print(karakter.values())
-# print(karakter.items())
+                elif islem == 4:
+                    while True:
+                        mevcutSifre = input("Mevcut şifrenizi giriniz:")
+                        if mevcutSifre == sifrem:
+                            yeniSifre = input("Yeni şifrenizi giriniz:")
+                            sifrem = yeniSifre
+                            print(f"Şifreniz değiştirildi. Yeni şifreniz {sifrem}")
+                            break
+                        else:
+                            print("Hatalı şifre")
+                elif islem == 5:
+                    print(f"Mevcut bakiyeniz: {bakiye}₺")
+                elif islem == 6:
+                    print(f"Borcunuz : {borc}₺")
+                elif islem == 7:
+                    print("Çıkış yappılıyor...")
+                    break
+        elif hak == 1:
+            print("Hakkınız dolmuştur.")
+            break                
+atm()

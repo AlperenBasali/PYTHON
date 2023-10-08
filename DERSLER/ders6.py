@@ -1,11 +1,11 @@
 # ! Dictionary 
 
-karakter = {
-    "isim":"Furkan",
-    "soyisim":"İlaslan",
-    "yas":26,
-    "meslek":"Eğitmen",
-}
+# karakter = {
+#     "isim":"Furkan",
+#     "soyisim":"İlaslan",
+#     "yas":26,
+#     "meslek":"Eğitmen",
+# }
 
 # print(karakter)
 # print(type(karakter))
